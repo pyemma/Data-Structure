@@ -1,0 +1,29 @@
+Insert 4
+Insert 4
+Insert 5
+Search 9 tree: false set: false
+Insert 12
+Left rotate: 4
+Insert 11
+Insert 7
+Right rotate: 12
+Insert 14
+Left rotate: 5
+Search 1 tree: false set: false
+Insert 0
+Insert 3
+Left rotate: 0
+Right rotate: 4
+Insert 7
+Search 11 tree: true set: true
+Insert 8
+Insert 3
+11
+|-5
+| |-3
+| | |-0
+| | |-4
+| |-7
+| | |-8
+|-12
+| |-14

@@ -1,0 +1,31 @@
+<project name="datastructture" default="run" basedir=".">
+
+    <description>Data Structure Test</description>
+
+    <property name="src" location="src" />
+    <property name="build" location="build" />
+
+    <path id="datastructture.classpath">
+        <pathelement path="${build}" />
+    </path>
+
+    <target name="init">
+        <mkdir dir="${build}" />
+        <mkdir dir="${build}/log" />
+    </target>
+
+    <target name="compile" depends="init">
+        <javac includeantruntime="false" srcdir="${src}" destdir="${build}" />
+    </target>
+
+    <target name="run" depends="compile">
+        <java classname="TestCode" fork="true" timeout="10000" failonerror="false" 
+          output="${build}/log/AVLTree.log" classpathref="datastructture.classpath">
+        </java>
+    </target>
+
+    <target name="clean">
+        <delete dir="${build}" />
+    </target>
+
+</project>
