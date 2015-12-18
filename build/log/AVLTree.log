@@ -1,16 +1,22 @@
-Search 14 tree: false set: false
-Search 9 tree: false set: false
-Search 9 tree: false set: false
+Insert 10
 Search 7 tree: false set: false
-Search 5 tree: false set: false
-Search 0 tree: false set: false
-Search 13 tree: false set: false
+Search 4 tree: false set: false
+Insert 4
+Insert 6
+Left rotate: 4
+Right rotate: 10
+Search 7 tree: false set: false
+Search 14 tree: false set: false
 Search 2 tree: false set: false
-Insert 1
-Search 0 tree: false set: false
-Search 9 tree: false set: false
-Search 6 tree: false set: false
-Search 8 tree: false set: false
-Search 10 tree: false set: false
-Search 3 tree: false set: false
-1
+Insert 8
+Search 1 tree: false set: false
+Search 13 tree: false set: false
+Insert 6
+Insert 13
+Search 10 tree: true set: true
+Insert 8
+6
+|-4
+|-10
+| |-8
+| |-13

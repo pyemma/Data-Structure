@@ -7,7 +7,7 @@ public class SuffixTreeTest {
         while(scan.hasNext()) {
             String str = scan.next();
             SuffixTree st = new SuffixTree(str);
-            st.build(false);
+            st.build(true);
             st.print();
         }
     }

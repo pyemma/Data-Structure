@@ -65,10 +65,16 @@ public class SuffixTree {
                     // if there is other new internal node, create suffix link
                     if (lastNode != null)
                         lastNode.suffixLink = activeNode;
+
+                    // when it is an internal node
+                    if (activeNode.suffixLink != null) {
+                        activeNode = activeNode.suffixLink;
+                    }
                     --remainder;
                 } else {
                     Node edgeNode = activeNode.nodes.get(suffixBegin);
                     int start = edgeNode.start;
+                    activeEdge = start;
                     int end = edgeNode.end;
                     int edgeLength = (end == -1) ? (i - start + 1) : (end - start + 1);
                     // walk down necessarily
@@ -110,6 +116,8 @@ public class SuffixTree {
                                 // or the root node
                                 if (activeNode.suffixLink != null) {
                                     activeNode = activeNode.suffixLink;
+                                } else {
+                                    activeNode = root;
                                 }
                                 --remainder;
                             }
