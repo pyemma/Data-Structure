@@ -19,10 +19,13 @@
     </target>
 
     <target name="run" depends="compile">
-        <java classname="TestCode" fork="true" timeout="10000" failonerror="false"
+        <!-- <java classname="TestCode" fork="true" timeout="10000" failonerror="false"
           output="${build}/log/AVLTree.log" classpathref="datastructure.classpath">
-        </java>
-        <java classname="SuffixTreeTest" fork="true" failonerror="false"
+        </java> -->
+        <!-- <java classname="SuffixTreeTest" fork="true" failonerror="false"
+          classpathref="datastructure.classpath">
+        </java> -->
+        <java classname="RangeMinimumQueryTest" fork="true" failonerror="false"
           classpathref="datastructure.classpath">
         </java>
     </target>
